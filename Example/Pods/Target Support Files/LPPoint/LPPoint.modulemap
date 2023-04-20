@@ -1,0 +1,6 @@
+framework module LPPoint {
+  umbrella header "LPPoint-umbrella.h"
+
+  export *
+  module * { export * }
+}
