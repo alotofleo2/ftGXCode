@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'LPPoint_Example' do
+  pod 'LPPoint', :path => '../'
+
+  target 'LPPoint_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

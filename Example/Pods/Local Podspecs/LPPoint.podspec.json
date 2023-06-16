@@ -1,0 +1,22 @@
+{
+  "name": "LPPoint",
+  "version": "0.1.0",
+  "summary": "A short description of LPPoint.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/方焘/LPPoint",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "方焘": "fangtao@leoao.com"
+  },
+  "source": {
+    "git": "https://github.com/方焘/LPPoint.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "LPPoint/Classes/**/*"
+}
