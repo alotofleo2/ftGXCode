@@ -63,40 +63,6 @@
 //    [view lp_linkNode];
 }
 
-////桥接节点关系
-//- (void)lp_linkNode {
-//
-//    if (self.lp_domNodeModel.isRoot) return;
-//    if (!self.superview && !self.lp_domNodeModel.dummyParentView)return;
-//
-//    //如果原来就有桥接先清除
-//    if (self.lp_domNodeModel.parentNode) {
-//        [self.lp_domNodeModel.parentNode removeSubNode:self.lp_domNodeModel];
-//        self.lp_domNodeModel.parentNode = nil;
-//    }
-//
-//    //如何存在虚拟父视图,把虚拟父视图当做superView去判断
-//    if (self.lp_domNodeModel.dummyParentView) {
-//        [self lp_linkNodeWithSuperview:self.lp_domNodeModel.dummyParentView];
-//    } else {
-//        [self lp_linkNodeWithSuperview:self.superview];
-//    }
-//
-//}
-//桥接节点关系
-//- (void)lp_linkNodeWithSuperview:(UIView *)superview {
-//    UIView *sView = superview;
-//    while (sView) {
-//        if ([sView lp_isKeyNode]) {
-//            self.lp_domNodeModel.parentNode = sView.lp_domNodeModel;
-//            [sView.lp_domNodeModel addSubNode:self.lp_domNodeModel];
-//            // 检查并修复子节点关联
-//            [sView lp_checkAndFixChildNodes];
-//            break;
-//        }
-//        sView = sView.superview;
-//    }
-//}
 
 /// 判断是否为元素节点 通过是否已启用node模型判断
 - (BOOL)lp_isKeyNode {
@@ -118,32 +84,33 @@
     lp_domNodeModel.lp_view = self;
 }
 
-- (UIView *)lp_findViewBySPM:(NSString *)spm {
-    NSArray<NSString *> *spmPath = [spm componentsSeparatedByString:@"-"];
-    LPDomNodeModel *foundNode = [self.lp_domNodeModel findNodeBySPMPath:spmPath];
-    return foundNode ? foundNode.lp_view : nil;
-}
-
 - (NSString *)lp_currentNodeSPM {
-    NSMutableString *spm = [NSMutableString string];
-    LPDomNodeModel *currentNode = self.lp_domNodeModel;
-    
-    while (currentNode) {
-        if (spm.length > 0) {
-            [spm insertString:@"-" atIndex:0];
-        }
-        [spm insertString:currentNode.nodeId atIndex:0];
-        currentNode = currentNode.parentNode;
+    // 获取当前view的节点
+    LPDomNodeModel *node = [self lp_domNodeModel]; // 假设你有一个方法来获取当前view的节点
+
+    // 如果当前view的节点是根节点，返回其nodeId
+    if (node.nodeClassModel.isRoot) {
+        return node.nodeId;
     }
-    
-    return spm;
+
+    // 否则，递归地获取父view的SPM，然后将当前view的nodeId添加到其后面
+    UIView *parentView = self.superview;
+    while (parentView && ![parentView lp_isKeyNode]) {
+        parentView = parentView.superview;
+    }
+    if (!parentView) {
+        // 如果没有找到具有lp_node的父视图，返回当前节点的nodeId
+        return node.nodeId;
+    }
+    NSString *parentSPM = [parentView lp_currentNodeSPM];
+    return [NSString stringWithFormat:@"%@-%@", parentSPM, node.nodeId];
 }
 
 - (void)lp_bindEventsWithSPM:(NSString *)spm eventType:(NSInteger)eventType reportParameters:(NSDictionary *)reportParameters {
-    UIView *targetView = [self lp_findViewBySPM:spm];
-    if (!targetView) {
-        return;
-    }
+//    UIView *targetView = [self lp_findViewBySPM:spm];
+//    if (!targetView) {
+//        return;
+//    }
     
     // 请在此处补充绑定事件逻辑
     // eventType: 事件类型 (点击事件, 曝光事件)

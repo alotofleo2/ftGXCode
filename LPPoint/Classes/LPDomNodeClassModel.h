@@ -26,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 添加节点对象
 /// - Parameter node: 节点对象
 - (void)addNodeObject:(LPDomNodeModel *)nodeObject;
+
+
+/// 根据SPM查找节点
+/// - Parameter spm: spm
+- (LPDomNodeClassModel *)findNodeWithSPM:(NSString *)spm;
 @end
 
 NS_ASSUME_NONNULL_END

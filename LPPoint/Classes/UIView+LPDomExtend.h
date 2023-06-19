@@ -15,10 +15,6 @@
 - (BOOL)lp_isKeyNode;
 
 
-/// 根据SPM查找对应View
-/// - Parameter spm: spm
-- (UIView *)lp_findViewBySPM:(NSString *)spm;
-
 /// 当前view的SPM
 - (NSString *)lp_currentNodeSPM;
 
