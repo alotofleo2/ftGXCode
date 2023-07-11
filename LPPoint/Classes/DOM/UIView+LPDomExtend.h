@@ -16,7 +16,7 @@
 
 
 /// 当前view的SPM
-- (NSString *)lp_currentNodeSPM;
+- (NSString *)lp_currentViewNodeSPM;
 
 - (void)lp_bindEventsWithSPM:(NSString *)spm eventType:(NSInteger)eventType reportParameters:(NSDictionary *)reportParameters;
 @end

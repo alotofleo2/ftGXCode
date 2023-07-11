@@ -12,8 +12,11 @@
 
 #import "LPDomNodeClassModel.h"
 #import "LPDomNodeModel.h"
-#import "LPPointManager.h"
+#import "LPPageDomManager.h"
 #import "UIView+LPDomExtend.h"
+#import "LPPointEventModel.h"
+#import "LPPointDownloadManager.h"
+#import "LPErrorReportor.h"
 
 FOUNDATION_EXPORT double LPPointVersionNumber;
 FOUNDATION_EXPORT const unsigned char LPPointVersionString[];

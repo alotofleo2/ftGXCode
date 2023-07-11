@@ -7,15 +7,13 @@
 
 #import "UIView+LPDomExtend.h"
 #import <objc/runtime.h>
-#import "LPPointManager.h"
 
 @interface NSObject (LPPointSwizzle)
 
 @end
 
 @implementation NSObject (LPPointSwizzle)
-+ (BOOL)lk_swizzleMethod:(SEL)origSel_ withMethod:(SEL)altSel_ error:(NSError **)error_
-{
++ (BOOL)lk_swizzleMethod:(SEL)origSel_ withMethod:(SEL)altSel_ error:(NSError **)error_ {
     Method origMethod = class_getInstanceMethod(self, origSel_);
     if (!origMethod) {
         return NO;
@@ -24,7 +22,7 @@
     if (!altMethod) {
         return NO;
     }
-    
+
     class_addMethod(self,
                     origSel_,
                     class_getMethodImplementation(self, origSel_),
@@ -33,14 +31,13 @@
                     altSel_,
                     class_getMethodImplementation(self, altSel_),
                     method_getTypeEncoding(altMethod));
-    
+
     method_exchangeImplementations(class_getInstanceMethod(self, origSel_), class_getInstanceMethod(self, altSel_));
-    
+
     return YES;
 }
 
-+ (BOOL)lk_swizzleClassMethod:(SEL)origSel_ withClassMethod:(SEL)altSel_ error:(NSError **)error_
-{
++ (BOOL)lk_swizzleClassMethod:(SEL)origSel_ withClassMethod:(SEL)altSel_ error:(NSError **)error_ {
     return [object_getClass((id)self) lk_swizzleMethod:origSel_ withMethod:altSel_ error:error_];
 }
 @end
@@ -56,24 +53,24 @@
     [self lk_swizzleMethod:@selector(addSubview:) withMethod:@selector(lp_point_addSubview:) error:nil];
 }
 
-
 - (void)lp_point_addSubview:(UIView *)view {
     [self lp_point_addSubview:view];
-    if (![view lp_isKeyNode]) return;
-//    [view lp_linkNode];
+    if (![view lp_isKeyNode])
+        return;
+    //    [view lp_linkNode];
 }
-
 
 /// 判断是否为元素节点 通过是否已启用node模型判断
 - (BOOL)lp_isKeyNode {
     LPDomNodeModel *lp_domNodeModel = objc_getAssociatedObject(self, @"lp_domNodeModel");
-    return lp_domNodeModel.nodeId.length > 0;
+    return lp_domNodeModel.nodeCode.length > 0;
 }
 
 - (LPDomNodeModel *)lp_domNodeModel {
     LPDomNodeModel *lp_domNodeModel = objc_getAssociatedObject(self, @"lp_domNodeModel");
     if (!lp_domNodeModel) {
         lp_domNodeModel = [[LPDomNodeModel alloc] init];
+        lp_domNodeModel.lp_view = self;
         [self lk_setDomNodeModel:lp_domNodeModel];
     }
     return lp_domNodeModel;
@@ -84,13 +81,13 @@
     lp_domNodeModel.lp_view = self;
 }
 
-- (NSString *)lp_currentNodeSPM {
+- (NSString *)lp_currentViewNodeSPM {
     // 获取当前view的节点
     LPDomNodeModel *node = [self lp_domNodeModel]; // 假设你有一个方法来获取当前view的节点
 
     // 如果当前view的节点是根节点，返回其nodeId
     if (node.nodeClassModel.isRoot) {
-        return node.nodeId;
+        return node.nodeCode;
     }
 
     // 否则，递归地获取父view的SPM，然后将当前view的nodeId添加到其后面
@@ -100,18 +97,18 @@
     }
     if (!parentView) {
         // 如果没有找到具有lp_node的父视图，返回当前节点的nodeId
-        return node.nodeId;
+        return node.nodeCode;
     }
-    NSString *parentSPM = [parentView lp_currentNodeSPM];
-    return [NSString stringWithFormat:@"%@-%@", parentSPM, node.nodeId];
+    NSString *parentSPM = [parentView lp_currentViewNodeSPM];
+    return [NSString stringWithFormat:@"%@-%@", parentSPM, node.nodeCode];
 }
 
 - (void)lp_bindEventsWithSPM:(NSString *)spm eventType:(NSInteger)eventType reportParameters:(NSDictionary *)reportParameters {
-//    UIView *targetView = [self lp_findViewBySPM:spm];
-//    if (!targetView) {
-//        return;
-//    }
-    
+    //    UIView *targetView = [self lp_findViewBySPM:spm];
+    //    if (!targetView) {
+    //        return;
+    //    }
+
     // 请在此处补充绑定事件逻辑
     // eventType: 事件类型 (点击事件, 曝光事件)
     // reportParameters: 上报参数

@@ -7,56 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CAD65F25C5455DCA5AB5A774A57D485 /* LPDomNodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0291872B7831EDF44705D859F3AA1 /* LPDomNodeModel.m */; };
+		14CEE2D4DAD46F06ADECFC6597212DC2 /* LPPoint-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 424BF431BF8DD195FB7FD07F28BE9618 /* LPPoint-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15694FDEB56FD70E599D16832993ECB2 /* LPPointDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939026056CFFC457554C40AF3130191 /* LPPointDownloadManager.m */; };
+		1A20F3F166AE23CA3AFE726794BEED28 /* LPErrorReportor.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2905CD771A26A49A6132B855CA623 /* LPErrorReportor.m */; };
+		1D3B6C13070F070003DDDA0445451315 /* LPDomNodeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0413B188CAA8EE65C2C651BC48142429 /* LPDomNodeModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F825440042ACF76072276EBABE8FE4E /* Pods-LPPoint_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 710CA1BDC6AF6ACBCF89C0F6D37CC9A4 /* Pods-LPPoint_Example-dummy.m */; };
-		40035831C1AA43CE26568731A267B680 /* LPPointManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A678DFA5B15C06339D95566A710B1F1 /* LPPointManager.m */; };
-		69B2463556E5AF1E0C7EE86F004CCDD1 /* LPPoint-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F157A055BC12120E9B8881B8A2B65C55 /* LPPoint-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CB43521C7F9631BF01513592F563748 /* LPPointManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2162FB33B08723EC1F27957A05823CC9 /* LPPointManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		274709F7B1F25F5D0F02A4B2DA05E3EE /* LPDomNodeClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E35CEC2AEFCF10E44648A7A93DDC2FF /* LPDomNodeClassModel.m */; };
+		4DF42AE852549AC4F545202F25443AE9 /* LPPointDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A91140E46DEA5AC23499062372524FB /* LPPointDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50F38D6F45BF7CFFD20AA5CCBACE89C7 /* LPPointEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331066526CB6E0A50129C78C150367 /* LPPointEventModel.m */; };
+		5A6A3D118560F252C439D341CDEBEF23 /* LPPageDomManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E0F89E6CA30EC7E00BCE2AF90A5B09 /* LPPageDomManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB387B09707297813394EB9F7DA9435 /* LPDomNodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD3D98782F740EBCFB81844AABB0869 /* LPDomNodeModel.m */; };
+		670943DA84130D512EC3BD7F2B7B5DD3 /* LPDomNodeClassModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 972B6CE8E42637FE29D09A128B8F4F71 /* LPDomNodeClassModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69F35192FB1C85F6D20BA0A7F37524BC /* LPErrorReportor.h in Headers */ = {isa = PBXBuildFile; fileRef = CD51C8E5B17C9420DB2BFD2C7304CEF9 /* LPErrorReportor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A72325F3584AC99F52DF5FC2F6E7686 /* Pods-LPPoint_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4BF3D5FED54B4C1E3942586DD7C1E2 /* Pods-LPPoint_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81A75C7A5460EBAA594990445635A718 /* LPDomNodeClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E25AE63DF6606A849B9569519E4AC /* LPDomNodeClassModel.m */; };
+		862F575F72C942A7FC8D05D858FCB112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		946A9034F70F59B7742CF1C1EFD306ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9C4C313AC4EA3DBB638471252983567D /* LPPoint-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F16E9921355CE478BEEF420840F8 /* LPPoint-dummy.m */; };
 		9DAA67DCE56A92B7BB3402126B8683C9 /* Pods-LPPoint_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF67A9E42A4062AC1A479378820FF3C4 /* Pods-LPPoint_Tests-dummy.m */; };
-		9FDBBF6608316C08AABC6A2CCEDF0255 /* UIView+LPDomExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DA346A96C5B2C615FD73FD897A70C /* UIView+LPDomExtend.m */; };
-		9FE656E7F070D5E5448AE0497B30BC2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A757BE015AF474640A5D735741506548 /* LPPoint-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12215E9AA74509007BFC708E2E422C88 /* LPPoint-dummy.m */; };
 		BA82D613FAF70E36831514A217FF17F3 /* Pods-LPPoint_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 500AE3DD05D7194AB799FEDEF53792DD /* Pods-LPPoint_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDE9682545ACD0C8D8A42740B76850D3 /* LPDomNodeClassModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 520DB678B96509BBBC56766FC6BD8A06 /* LPDomNodeClassModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D51CFD144A0864E7CF80369E077A01F7 /* LPDomNodeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 10707BA89C958F286B39AEB79B945F60 /* LPDomNodeModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C44BDC108FBBD136D5D1A89A597F2473 /* LPPageDomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F7ECA43B6853FF691FDE273682755F /* LPPageDomManager.m */; };
+		CF4FC6024F1348EB6291264C9E3D0CD5 /* UIView+LPDomExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 569DD0E914B5D132725A9FE1005A6C3F /* UIView+LPDomExtend.m */; };
+		D4F4F56E40B4C2EDD6FFB9E3E3B8F558 /* UIView+LPDomExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD1A029B5F0E93805B998A5331D8FED /* UIView+LPDomExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D543E545A7DE33408F531FACCB000920 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F623A5008EE7AA9D26944D69E4570E4F /* UIView+LPDomExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F75618F767387A29E0D0AA350FBE6D /* UIView+LPDomExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB83B856FEC3328158F423C82D7D24F0 /* LPPointEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CAAE9764A637C01EFEA82DFA79D566 /* LPPointEventModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CC564F654F5DDC9452CA9C4E06708306 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9AB2AFAC0C55F2EF69048044D31641A;
-			remoteInfo = LPPoint;
-		};
-		D7A00203DC86B5F52D7EDB6223668784 /* PBXContainerItemProxy */ = {
+		08AA25FF93A59EAD86AD3D71CBB3B76D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3FF6A14194EDCF4F2DE4CAE2B852C82C;
 			remoteInfo = "Pods-LPPoint_Example";
 		};
+		E9FA3612AA9A1A2C47BF505F8488714F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9AB2AFAC0C55F2EF69048044D31641A;
+			remoteInfo = LPPoint;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01CAAE9764A637C01EFEA82DFA79D566 /* LPPointEventModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPPointEventModel.h; sourceTree = "<group>"; };
+		0413B188CAA8EE65C2C651BC48142429 /* LPDomNodeModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDomNodeModel.h; sourceTree = "<group>"; };
+		0DE8F11DDA4C637A0A6232D46EF7B39E /* LPPoint.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LPPoint.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0EE999CA548F1EF58E9423EB7A8BE042 /* Pods-LPPoint_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPPoint_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		10707BA89C958F286B39AEB79B945F60 /* LPDomNodeModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDomNodeModel.h; path = LPPoint/Classes/LPDomNodeModel.h; sourceTree = "<group>"; };
-		12215E9AA74509007BFC708E2E422C88 /* LPPoint-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPPoint-dummy.m"; sourceTree = "<group>"; };
+		0FD1A029B5F0E93805B998A5331D8FED /* UIView+LPDomExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+LPDomExtend.h"; sourceTree = "<group>"; };
+		113680F163C814A230E5D552C8E35F29 /* LPPoint-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPPoint-prefix.pch"; sourceTree = "<group>"; };
 		1CA7EF0EDDB5ADB6621E5222CDAAC095 /* Pods-LPPoint_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPPoint_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2162FB33B08723EC1F27957A05823CC9 /* LPPointManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPPointManager.h; path = LPPoint/Classes/LPPointManager.h; sourceTree = "<group>"; };
 		23ED5A0F625675ACBB33CB040623CA82 /* Pods-LPPoint_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPPoint_Example-Info.plist"; sourceTree = "<group>"; };
-		302ABC16F319D36DB2D5BF90430C5762 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2DA702D423A8048AC3C771BE8CD4259E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		36F7ECA43B6853FF691FDE273682755F /* LPPageDomManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPPageDomManager.m; sourceTree = "<group>"; };
+		3939026056CFFC457554C40AF3130191 /* LPPointDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPPointDownloadManager.m; path = LPPoint/Classes/LPPointDownloadManager.m; sourceTree = "<group>"; };
 		397FF18E700F34522D5F576AA432FDEC /* Pods-LPPoint_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LPPoint_Example"; path = Pods_LPPoint_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A07F16E9921355CE478BEEF420840F8 /* LPPoint-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPPoint-dummy.m"; sourceTree = "<group>"; };
+		424BF431BF8DD195FB7FD07F28BE9618 /* LPPoint-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPPoint-umbrella.h"; sourceTree = "<group>"; };
+		4B331066526CB6E0A50129C78C150367 /* LPPointEventModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPPointEventModel.m; sourceTree = "<group>"; };
+		4E391F48F5D75472A1AE746405C42BD6 /* LPPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPPoint.debug.xcconfig; sourceTree = "<group>"; };
 		500AE3DD05D7194AB799FEDEF53792DD /* Pods-LPPoint_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPPoint_Example-umbrella.h"; sourceTree = "<group>"; };
-		520DB678B96509BBBC56766FC6BD8A06 /* LPDomNodeClassModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDomNodeClassModel.h; path = LPPoint/Classes/LPDomNodeClassModel.h; sourceTree = "<group>"; };
-		564E5FC66292D582BC3905C00E01112E /* LPPoint.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LPPoint.modulemap; sourceTree = "<group>"; };
-		5D94E1AA778325E664BF3479DF7F6DA2 /* LPPoint.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LPPoint.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6A678DFA5B15C06339D95566A710B1F1 /* LPPointManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPPointManager.m; path = LPPoint/Classes/LPPointManager.m; sourceTree = "<group>"; };
+		569DD0E914B5D132725A9FE1005A6C3F /* UIView+LPDomExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+LPDomExtend.m"; sourceTree = "<group>"; };
+		5A91140E46DEA5AC23499062372524FB /* LPPointDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPPointDownloadManager.h; path = LPPoint/Classes/LPPointDownloadManager.h; sourceTree = "<group>"; };
+		5E35CEC2AEFCF10E44648A7A93DDC2FF /* LPDomNodeClassModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDomNodeClassModel.m; sourceTree = "<group>"; };
 		6B5F53E6856BA6593704C8E86DDC265A /* Pods-LPPoint_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LPPoint_Tests"; path = Pods_LPPoint_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		710CA1BDC6AF6ACBCF89C0F6D37CC9A4 /* Pods-LPPoint_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPPoint_Example-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,41 +78,40 @@
 		811B69C30D3697E6031D572B03C3BFD8 /* Pods-LPPoint_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LPPoint_Example.modulemap"; sourceTree = "<group>"; };
 		8D4BF3D5FED54B4C1E3942586DD7C1E2 /* Pods-LPPoint_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPPoint_Tests-umbrella.h"; sourceTree = "<group>"; };
 		93C622495C1B89D46B35DFAE805816A8 /* Pods-LPPoint_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPPoint_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		967E25AE63DF6606A849B9569519E4AC /* LPDomNodeClassModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDomNodeClassModel.m; path = LPPoint/Classes/LPDomNodeClassModel.m; sourceTree = "<group>"; };
+		972B6CE8E42637FE29D09A128B8F4F71 /* LPDomNodeClassModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDomNodeClassModel.h; sourceTree = "<group>"; };
+		97E0F89E6CA30EC7E00BCE2AF90A5B09 /* LPPageDomManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPPageDomManager.h; sourceTree = "<group>"; };
 		9D2AD4CDA0B2F0546C8226C2BCD906A2 /* Pods-LPPoint_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LPPoint_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EE0291872B7831EDF44705D859F3AA1 /* LPDomNodeModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDomNodeModel.m; path = LPPoint/Classes/LPDomNodeModel.m; sourceTree = "<group>"; };
 		A6DE4E1AB6BDE3797F5BAF2FF60161F2 /* LPPoint */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPPoint; path = LPPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA4DA346A96C5B2C615FD73FD897A70C /* UIView+LPDomExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LPDomExtend.m"; path = "LPPoint/Classes/UIView+LPDomExtend.m"; sourceTree = "<group>"; };
-		BA657290427D056660B522538EDFFD07 /* LPPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPPoint.release.xcconfig; sourceTree = "<group>"; };
-		C3F75618F767387A29E0D0AA350FBE6D /* UIView+LPDomExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LPDomExtend.h"; path = "LPPoint/Classes/UIView+LPDomExtend.h"; sourceTree = "<group>"; };
-		CDC1BB4A06F76A5C0AA0C43A0C06DEAF /* LPPoint-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPPoint-prefix.pch"; sourceTree = "<group>"; };
-		D0411801362C0DED638C65F797DFA09D /* LPPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPPoint.debug.xcconfig; sourceTree = "<group>"; };
+		ABF2905CD771A26A49A6132B855CA623 /* LPErrorReportor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPErrorReportor.m; sourceTree = "<group>"; };
+		B5E6C7AFC15C6D65222BCED37AC133EB /* LPPoint-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LPPoint-Info.plist"; sourceTree = "<group>"; };
+		B845F8943E92B58B625E77012908E31C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CD51C8E5B17C9420DB2BFD2C7304CEF9 /* LPErrorReportor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPErrorReportor.h; sourceTree = "<group>"; };
+		D32704D9F9DEDE01E9CBB98A055A5061 /* LPPoint.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LPPoint.modulemap; sourceTree = "<group>"; };
 		D5FBD016FE1021EEB27AB40B7B0C87FB /* Pods-LPPoint_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPPoint_Tests-Info.plist"; sourceTree = "<group>"; };
 		D7E004763E2D83AC03133B724B7103CE /* Pods-LPPoint_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPPoint_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D8FF862292CAFD36C82EB2039E84D313 /* LPPoint-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LPPoint-Info.plist"; sourceTree = "<group>"; };
 		DF67A9E42A4062AC1A479378820FF3C4 /* Pods-LPPoint_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPPoint_Tests-dummy.m"; sourceTree = "<group>"; };
-		E66E3E7507779E5C3C6B4C72FAFE38D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E6D610C26A1CDB2235CE2550ABC3CFD4 /* Pods-LPPoint_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPPoint_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EB446ABCCBFD05D07A15FC289C20083B /* LPPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPPoint.release.xcconfig; sourceTree = "<group>"; };
 		ECD12BB81EF5C618537BEAB7638ED3EF /* Pods-LPPoint_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPPoint_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F157A055BC12120E9B8881B8A2B65C55 /* LPPoint-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPPoint-umbrella.h"; sourceTree = "<group>"; };
+		EDD3D98782F740EBCFB81844AABB0869 /* LPDomNodeModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDomNodeModel.m; sourceTree = "<group>"; };
 		F27624B7B1907BFCB807B3BF5D0BC275 /* Pods-LPPoint_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPPoint_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A844ADFB52A946677240DB12DB05DB0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862F575F72C942A7FC8D05D858FCB112 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0F9F709258E61EE4A241A04283BD15B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D543E545A7DE33408F531FACCB000920 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C49376FB18A704A0188DA4D2CB598CC9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FE656E7F070D5E5448AE0497B30BC2F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,32 +126,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29AEAB1CA29A4CC4B73AEDE10CF7B0DA /* Pod */ = {
+		2BBFA3835CAF66A72B03D018DBEA350E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				302ABC16F319D36DB2D5BF90430C5762 /* LICENSE */,
-				5D94E1AA778325E664BF3479DF7F6DA2 /* LPPoint.podspec */,
-				E66E3E7507779E5C3C6B4C72FAFE38D5 /* README.md */,
+				2DA702D423A8048AC3C771BE8CD4259E /* LICENSE */,
+				0DE8F11DDA4C637A0A6232D46EF7B39E /* LPPoint.podspec */,
+				B845F8943E92B58B625E77012908E31C /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		2BEB9A61757616856A0D505CE8EF90EF /* LPPoint */ = {
+		32299870740A150AB0161147574BE998 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				520DB678B96509BBBC56766FC6BD8A06 /* LPDomNodeClassModel.h */,
-				967E25AE63DF6606A849B9569519E4AC /* LPDomNodeClassModel.m */,
-				10707BA89C958F286B39AEB79B945F60 /* LPDomNodeModel.h */,
-				9EE0291872B7831EDF44705D859F3AA1 /* LPDomNodeModel.m */,
-				2162FB33B08723EC1F27957A05823CC9 /* LPPointManager.h */,
-				6A678DFA5B15C06339D95566A710B1F1 /* LPPointManager.m */,
-				C3F75618F767387A29E0D0AA350FBE6D /* UIView+LPDomExtend.h */,
-				BA4DA346A96C5B2C615FD73FD897A70C /* UIView+LPDomExtend.m */,
-				29AEAB1CA29A4CC4B73AEDE10CF7B0DA /* Pod */,
-				8DD1CAA68BC6712C25FD12B3F6961C7C /* Support Files */,
+				01CAAE9764A637C01EFEA82DFA79D566 /* LPPointEventModel.h */,
+				4B331066526CB6E0A50129C78C150367 /* LPPointEventModel.m */,
 			);
-			name = LPPoint;
-			path = ../..;
+			name = Event;
+			path = LPPoint/Classes/Event;
+			sourceTree = "<group>";
+		};
+		3D23D7A94E41C06FCEE410F76F64349C /* DOM */ = {
+			isa = PBXGroup;
+			children = (
+				972B6CE8E42637FE29D09A128B8F4F71 /* LPDomNodeClassModel.h */,
+				5E35CEC2AEFCF10E44648A7A93DDC2FF /* LPDomNodeClassModel.m */,
+				0413B188CAA8EE65C2C651BC48142429 /* LPDomNodeModel.h */,
+				EDD3D98782F740EBCFB81844AABB0869 /* LPDomNodeModel.m */,
+				97E0F89E6CA30EC7E00BCE2AF90A5B09 /* LPPageDomManager.h */,
+				36F7ECA43B6853FF691FDE273682755F /* LPPageDomManager.m */,
+				0FD1A029B5F0E93805B998A5331D8FED /* UIView+LPDomExtend.h */,
+				569DD0E914B5D132725A9FE1005A6C3F /* UIView+LPDomExtend.m */,
+			);
+			name = DOM;
+			path = LPPoint/Classes/DOM;
+			sourceTree = "<group>";
+		};
+		41B6E9CAFFAC3BFB93938E4CC7CCE109 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CD51C8E5B17C9420DB2BFD2C7304CEF9 /* LPErrorReportor.h */,
+				ABF2905CD771A26A49A6132B855CA623 /* LPErrorReportor.m */,
+			);
+			name = Utility;
+			path = LPPoint/Classes/Utility;
 			sourceTree = "<group>";
 		};
 		46C7D785BD5D41C12066D341C9C700FB /* Targets Support Files */ = {
@@ -151,14 +181,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5656C29045BABB28F9B9A324600B7F75 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2BEB9A61757616856A0D505CE8EF90EF /* LPPoint */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,16 +189,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		8DD1CAA68BC6712C25FD12B3F6961C7C /* Support Files */ = {
+		7EED8A740AE0EA797E6CD1F7265D5CF3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				564E5FC66292D582BC3905C00E01112E /* LPPoint.modulemap */,
-				12215E9AA74509007BFC708E2E422C88 /* LPPoint-dummy.m */,
-				D8FF862292CAFD36C82EB2039E84D313 /* LPPoint-Info.plist */,
-				CDC1BB4A06F76A5C0AA0C43A0C06DEAF /* LPPoint-prefix.pch */,
-				F157A055BC12120E9B8881B8A2B65C55 /* LPPoint-umbrella.h */,
-				D0411801362C0DED638C65F797DFA09D /* LPPoint.debug.xcconfig */,
-				BA657290427D056660B522538EDFFD07 /* LPPoint.release.xcconfig */,
+				D32704D9F9DEDE01E9CBB98A055A5061 /* LPPoint.modulemap */,
+				3A07F16E9921355CE478BEEF420840F8 /* LPPoint-dummy.m */,
+				B5E6C7AFC15C6D65222BCED37AC133EB /* LPPoint-Info.plist */,
+				113680F163C814A230E5D552C8E35F29 /* LPPoint-prefix.pch */,
+				424BF431BF8DD195FB7FD07F28BE9618 /* LPPoint-umbrella.h */,
+				4E391F48F5D75472A1AE746405C42BD6 /* LPPoint.debug.xcconfig */,
+				EB446ABCCBFD05D07A15FC289C20083B /* LPPoint.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/LPPoint";
@@ -190,6 +212,14 @@
 				6B5F53E6856BA6593704C8E86DDC265A /* Pods-LPPoint_Tests */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B5C0D3C634ADA6DF3129EAAE1EF75FCB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9956494CF68CF57C234E9E36B7669F9 /* LPPoint */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CCEBCC84C7056C3376EB61EC5A45EBD1 /* Pods-LPPoint_Example */ = {
@@ -229,7 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				5656C29045BABB28F9B9A324600B7F75 /* Development Pods */,
+				B5C0D3C634ADA6DF3129EAAE1EF75FCB /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				AE58D27799974B60BD1EEFE565EE15A5 /* Products */,
 				46C7D785BD5D41C12066D341C9C700FB /* Targets Support Files */,
@@ -244,18 +274,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F9956494CF68CF57C234E9E36B7669F9 /* LPPoint */ = {
+			isa = PBXGroup;
+			children = (
+				5A91140E46DEA5AC23499062372524FB /* LPPointDownloadManager.h */,
+				3939026056CFFC457554C40AF3130191 /* LPPointDownloadManager.m */,
+				3D23D7A94E41C06FCEE410F76F64349C /* DOM */,
+				32299870740A150AB0161147574BE998 /* Event */,
+				2BBFA3835CAF66A72B03D018DBEA350E /* Pod */,
+				7EED8A740AE0EA797E6CD1F7265D5CF3 /* Support Files */,
+				41B6E9CAFFAC3BFB93938E4CC7CCE109 /* Utility */,
+			);
+			name = LPPoint;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		242481F05C9880DEBD15AEAB1F1CCB52 /* Headers */ = {
+		18212B7E3D8B1628B7D8B1E2E209E64F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE9682545ACD0C8D8A42740B76850D3 /* LPDomNodeClassModel.h in Headers */,
-				D51CFD144A0864E7CF80369E077A01F7 /* LPDomNodeModel.h in Headers */,
-				69B2463556E5AF1E0C7EE86F004CCDD1 /* LPPoint-umbrella.h in Headers */,
-				6CB43521C7F9631BF01513592F563748 /* LPPointManager.h in Headers */,
-				F623A5008EE7AA9D26944D69E4570E4F /* UIView+LPDomExtend.h in Headers */,
+				670943DA84130D512EC3BD7F2B7B5DD3 /* LPDomNodeClassModel.h in Headers */,
+				1D3B6C13070F070003DDDA0445451315 /* LPDomNodeModel.h in Headers */,
+				69F35192FB1C85F6D20BA0A7F37524BC /* LPErrorReportor.h in Headers */,
+				5A6A3D118560F252C439D341CDEBEF23 /* LPPageDomManager.h in Headers */,
+				14CEE2D4DAD46F06ADECFC6597212DC2 /* LPPoint-umbrella.h in Headers */,
+				4DF42AE852549AC4F545202F25443AE9 /* LPPointDownloadManager.h in Headers */,
+				FB83B856FEC3328158F423C82D7D24F0 /* LPPointEventModel.h in Headers */,
+				D4F4F56E40B4C2EDD6FFB9E3E3B8F558 /* UIView+LPDomExtend.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +338,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C8BD4B0D9CE134E04F6E84CCE91CB4F4 /* PBXTargetDependency */,
+				B855EA75E60A8B86BBD500BC90E45E01 /* PBXTargetDependency */,
 			);
 			name = "Pods-LPPoint_Tests";
 			productName = Pods_LPPoint_Tests;
@@ -309,7 +357,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E5FC100EEB5E0B6B81532C9226F7E3EE /* PBXTargetDependency */,
+				B857EA730D9C9D5429D60B6760922DE0 /* PBXTargetDependency */,
 			);
 			name = "Pods-LPPoint_Example";
 			productName = Pods_LPPoint_Example;
@@ -318,12 +366,12 @@
 		};
 		C9AB2AFAC0C55F2EF69048044D31641A /* LPPoint */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3059D50349FCD6D6BF903DEE2F98AC21 /* Build configuration list for PBXNativeTarget "LPPoint" */;
+			buildConfigurationList = 730DC71BE406A87E13EC105A2643E6F1 /* Build configuration list for PBXNativeTarget "LPPoint" */;
 			buildPhases = (
-				242481F05C9880DEBD15AEAB1F1CCB52 /* Headers */,
-				4A852F7EB2DA9C15736674D7416FE947 /* Sources */,
-				C49376FB18A704A0188DA4D2CB598CC9 /* Frameworks */,
-				57C6987607F9692A1D88D0AEE2B6E9E4 /* Resources */,
+				18212B7E3D8B1628B7D8B1E2E209E64F /* Headers */,
+				755AD3975CE81DB43EB9967C1654C5D5 /* Sources */,
+				A844ADFB52A946677240DB12DB05DB0C /* Frameworks */,
+				555B58F4F37CF1067A42C5BB2E376BDD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -378,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57C6987607F9692A1D88D0AEE2B6E9E4 /* Resources */ = {
+		555B58F4F37CF1067A42C5BB2E376BDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,23 +436,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A852F7EB2DA9C15736674D7416FE947 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81A75C7A5460EBAA594990445635A718 /* LPDomNodeClassModel.m in Sources */,
-				1CAD65F25C5455DCA5AB5A774A57D485 /* LPDomNodeModel.m in Sources */,
-				A757BE015AF474640A5D735741506548 /* LPPoint-dummy.m in Sources */,
-				40035831C1AA43CE26568731A267B680 /* LPPointManager.m in Sources */,
-				9FDBBF6608316C08AABC6A2CCEDF0255 /* UIView+LPDomExtend.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C89548DD1ED3B9D28391614879E2330 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1F825440042ACF76072276EBABE8FE4E /* Pods-LPPoint_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755AD3975CE81DB43EB9967C1654C5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274709F7B1F25F5D0F02A4B2DA05E3EE /* LPDomNodeClassModel.m in Sources */,
+				5EB387B09707297813394EB9F7DA9435 /* LPDomNodeModel.m in Sources */,
+				1A20F3F166AE23CA3AFE726794BEED28 /* LPErrorReportor.m in Sources */,
+				C44BDC108FBBD136D5D1A89A597F2473 /* LPPageDomManager.m in Sources */,
+				9C4C313AC4EA3DBB638471252983567D /* LPPoint-dummy.m in Sources */,
+				15694FDEB56FD70E599D16832993ECB2 /* LPPointDownloadManager.m in Sources */,
+				50F38D6F45BF7CFFD20AA5CCBACE89C7 /* LPPointEventModel.m in Sources */,
+				CF4FC6024F1348EB6291264C9E3D0CD5 /* UIView+LPDomExtend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,21 +470,52 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C8BD4B0D9CE134E04F6E84CCE91CB4F4 /* PBXTargetDependency */ = {
+		B855EA75E60A8B86BBD500BC90E45E01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LPPoint_Example";
 			target = 3FF6A14194EDCF4F2DE4CAE2B852C82C /* Pods-LPPoint_Example */;
-			targetProxy = D7A00203DC86B5F52D7EDB6223668784 /* PBXContainerItemProxy */;
+			targetProxy = 08AA25FF93A59EAD86AD3D71CBB3B76D /* PBXContainerItemProxy */;
 		};
-		E5FC100EEB5E0B6B81532C9226F7E3EE /* PBXTargetDependency */ = {
+		B857EA730D9C9D5429D60B6760922DE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LPPoint;
 			target = C9AB2AFAC0C55F2EF69048044D31641A /* LPPoint */;
-			targetProxy = CC564F654F5DDC9452CA9C4E06708306 /* PBXContainerItemProxy */;
+			targetProxy = E9FA3612AA9A1A2C47BF505F8488714F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1914863FAEA8B3D541D8A75E736E5156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E391F48F5D75472A1AE746405C42BD6 /* LPPoint.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LPPoint/LPPoint-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPPoint/LPPoint-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LPPoint/LPPoint.modulemap";
+				PRODUCT_MODULE_NAME = LPPoint;
+				PRODUCT_NAME = LPPoint;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		51497CE1380E4FCB1EA922F0103B6F0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECD12BB81EF5C618537BEAB7638ED3EF /* Pods-LPPoint_Tests.release.xcconfig */;
@@ -530,40 +612,9 @@
 			};
 			name = Release;
 		};
-		8790D6D70C6A09C48EF1D447A8B0EDF5 /* Debug */ = {
+		9B129DC8F3F7C2F4EA3BDC75C85F69F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0411801362C0DED638C65F797DFA09D /* LPPoint.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LPPoint/LPPoint-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LPPoint/LPPoint-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LPPoint/LPPoint.modulemap";
-				PRODUCT_MODULE_NAME = LPPoint;
-				PRODUCT_NAME = LPPoint;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A983EEDD601895F8E8533C68F93E14B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA657290427D056660B522538EDFFD07 /* LPPoint.release.xcconfig */;
+			baseConfigurationReference = EB446ABCCBFD05D07A15FC289C20083B /* LPPoint.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -762,20 +813,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3059D50349FCD6D6BF903DEE2F98AC21 /* Build configuration list for PBXNativeTarget "LPPoint" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8790D6D70C6A09C48EF1D447A8B0EDF5 /* Debug */,
-				A983EEDD601895F8E8533C68F93E14B0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
 				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730DC71BE406A87E13EC105A2643E6F1 /* Build configuration list for PBXNativeTarget "LPPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1914863FAEA8B3D541D8A75E736E5156 /* Debug */,
+				9B129DC8F3F7C2F4EA3BDC75C85F69F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
